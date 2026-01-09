@@ -21,7 +21,17 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.25s ease,box-shadow 0.25s ease,transform 0.2s ease;
 }
+.btn:hover{
+    font-weight: 600;
+    background-color:#ffffff;
+    color: #30B868;
+    border: 1px solid #30B868;;
+    box-shadow: 0 8px 20px rgba(48, 184, 104, 0.35);
+    transform: translateY(-2px);
+}
+
 .btn-alt{
     color: #fff;
     background-color: transparent;
@@ -31,6 +41,14 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+}
+.btn-alt:hover{
+    font-weight: 600;
+    background-color:#30B868;
+    color: #ffffff;
+    border: 1px solid #30B868;;
+    box-shadow: 0 8px 20px rgba(48, 184, 104, 0.35);
+    transform: translateY(-2px);
 }
 .section-heading h2{
     font-size: 48px;
@@ -56,6 +74,8 @@ header{
     background-repeat: no-repeat;
     max-width: 1600px;
     margin: 0 auto;
+    background-size: cover;
+    background-position: center; 
 }
 .nav-bar{
 background-color: #fff;
@@ -137,7 +157,6 @@ main{
 #notes{
     padding-top: 80px;
     text-align: center;
-    z-index: 1;
 }
 #notes .notes-container{
     width: 85%;
@@ -155,10 +174,23 @@ main{
     margin-top: 44px;
 }
 #notes .note-box .note-card{
-    padding: 69.5px 24px;
-    border-radius: 8px;
+    z-index: 1;
+    background-color: #fff;
+    color: #000;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 69.5px 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    cursor: pointer;
 }
+#notes .note-box .note-card:hover{
+    z-index: 3;
+    transform: translateY(-6px) scale(1.02);
+    background-color: rgba(118, 238, 128, 0.397);
+    box-shadow: 0 12px 24px rgba(48, 184, 104, 0.2);
+    border: 1px solid rgba(48, 184, 104, 0.25);
+}
+
 #notes .note-box .note-card img{
     background-color: #f95555;
     padding: 14.04px;
@@ -228,9 +260,9 @@ main{
 }
 
 /* early-access section */
-#early-access{
+/* #early-access{
     border: 1px solid;
-}
+} */
 #early-access .early-access-container{
     width: 85%;
     max-width: 1360px;
