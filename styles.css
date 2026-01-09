@@ -54,6 +54,8 @@
 header{
     background: url("./assets/hero-bg.png");
     background-repeat: no-repeat;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .nav-bar{
 background-color: #fff;
@@ -125,13 +127,17 @@ nav .menu a:hover {
     gap: 16px;
 }
 
-/* note section */
+
+/* main section */
 main{
     color: #000;
 }
+
+/* note section */
 #notes{
     padding-top: 80px;
     text-align: center;
+    z-index: 1;
 }
 #notes .notes-container{
     width: 85%;
@@ -168,4 +174,50 @@ main{
 #notes .note-box .note-card p{
     font-size: 16px;
     color: #627382;
+}
+
+
+
+/* knowledge section */
+#knowledge{
+    margin-top: -48px;
+    background-color: #fff;
+    position: relative;
+    /* border: 1px solid; */
+    z-index: 2;
+}
+#knowledge .knowledge-container{
+    width: 85%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 120px 0;
+    display: flex;
+    justify-content:start;
+    gap: 60px;
+    /* border: 1px solid; */
+}
+#knowledge .knowledge-container .image img{
+    /* border: 1px solid; */
+    width: 600px;
+}
+#knowledge .knowledge-container .description{
+    margin-bottom: 16px;
+    padding: 120px 0;
+}
+#knowledge .knowledge-container .description .section-heading .caption{
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+#knowledge .knowledge-container .description .section-heading h2{
+    margin-bottom: 16px;
+}
+#knowledge .knowledge-container .description .section-heading p{
+    margin-bottom: 40px;
+}
+#knowledge .knowledge-container ul{
+    list-style-type: none;
+    color: #001931;
+}
+#knowledge .knowledge-container ul img{
+    margin-right: 6px;
 }
