@@ -218,6 +218,10 @@ main{
     list-style-type: none;
     color: #001931;
 }
+#knowledge .knowledge-container ul li{
+    margin-bottom: 16px;
+    line-height: 20px;
+}
 #knowledge .knowledge-container ul img{
     margin-right: 6px;
 }
