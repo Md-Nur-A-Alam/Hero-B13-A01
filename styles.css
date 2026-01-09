@@ -199,6 +199,7 @@ main{
 #knowledge .knowledge-container .image img{
     /* border: 1px solid; */
     width: 600px;
+    border-radius: 12px;
 }
 #knowledge .knowledge-container .description{
     margin-bottom: 16px;
@@ -224,4 +225,30 @@ main{
 }
 #knowledge .knowledge-container ul img{
     margin-right: 6px;
+}
+
+/* early-access section */
+#early-access{
+    border: 1px solid;
+}
+#early-access .early-access-container{
+    width: 85%;
+    max-width: 1360px;
+    text-align: center;
+    background-color: #F7F6F2;
+    padding: 80px 40px;
+    margin: 2px auto 120px;
+    border-radius: 12px;
+}
+#early-access .early-access-container .section-heading h2{
+    margin-bottom: 16px;
+}
+#early-access .early-access-container .section-heading p{
+    margin-bottom: 24px;
+}
+#early-access .early-access-container .btn{
+    margin-bottom: 16px;
+}
+#early-access .early-access-container .txt{
+    margin-bottom: 16px;
 }
