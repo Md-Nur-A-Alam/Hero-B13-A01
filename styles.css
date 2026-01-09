@@ -25,10 +25,10 @@
 }
 .btn:hover{
     font-weight: 600;
-    background-color:#ffffff;
-    color: #30B868;
-    border: 1px solid #30B868;;
-    box-shadow: 0 8px 20px rgba(48, 184, 104, 0.35);
+    background-color:#24964F;
+    color: #fff;
+    border: 1px solid #24964F;;
+    box-shadow: 0 8px 20px rgba(36, 150, 79, 0.35);
     transform: translateY(-2px);
 }
 
@@ -44,10 +44,10 @@
 }
 .btn-alt:hover{
     font-weight: 600;
-    background-color:#30B868;
-    color: #ffffff;
-    border: 1px solid #30B868;;
-    box-shadow: 0 8px 20px rgba(48, 184, 104, 0.35);
+    background-color:#24964F;
+    color: #fff;
+    border: 1px solid #24964F;;
+    box-shadow: 0 8px 20px rgba(36, 150, 79, 0.35);
     transform: translateY(-2px);
 }
 .section-heading h2{
@@ -70,12 +70,10 @@
 
 /* navigation bar */
 header{
-    background: url("./assets/hero-bg.png");
-    background-repeat: no-repeat;
-    max-width: 1600px;
-    margin: 0 auto;
+    background: linear-gradient(rgba(48, 184, 104, 0.6),rgba(0, 25, 49, 0.6)), url("./assets/hero-bg.png") no-repeat center center;
     background-size: cover;
-    background-position: center; 
+    width: 100%;
+    margin: 0;
 }
 .nav-bar{
 background-color: #fff;
